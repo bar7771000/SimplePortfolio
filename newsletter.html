@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <title>Subscribe</title>
+        <link rel="StyleSheet" href="mainPage.css">
+    </head>
+    <body class="body-news">
+        <form class="form-news">
+            <nav class="navbar news-nav">
+                <ul>
+                    <li><a href="mainPage.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="blog.html">Personal Blog</a></li>
+                    <li><a href="mainPage.html#down-main">Links</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1>Subscribe to my Newsletter!<br> 📨</h1>
+                <hr>
+                <p>Every Sunday I'm writting a newsletter email with some thoughts, links to articles, podcasts or books I enjoyed that week. Would love to have You on board!</p>
+                <hr>
+            </header>
+            <div>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email Address" name="email" required>
+                <label >
+                    <input type="checkbox" name="weekly" value="weekly" > Weekly Newsletter
+                </label>
+                <label  >
+                    <input type="checkbox" name="monthly"  value="monthly"> Monthly Newsletter
+                </label>
+                <button onclick="message();">Subscribe</button>
+            </div>
+        </form>
+        <script>
+            function message(){
+                alert("Thanks for Subscription, your newsletter has been sent to yr email")
+            }
+        </script>
+
+    </body>
+</html>
